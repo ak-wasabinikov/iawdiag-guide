@@ -464,6 +464,7 @@
       <li><a href="#tps">TPSリセット</a></li>
       <li><a href="#cotrim">COトリム調整</a></li>
       <li><a href="#service">サービスリセット</a></li>
+      <li><a href="#dtc">故障コード（DTC）の読み出し・消去</a></li>
       <li><a href="#trouble">トラブルシューティング</a></li>
     </ol>
   </nav>
@@ -965,10 +966,72 @@
     </ol>
   </section>
 
-  <!-- 12. TROUBLE -->
-  <section class="section" id="trouble">
+  <!-- 12. DTC -->
+  <section class="section" id="dtc">
     <div class="section-header">
       <span class="section-num">12</span>
+      <h2>故障コード（DTC）の読み出し・消去</h2>
+    </div>
+    <p>IAWDiagでは、ECUに記録された故障コード（DTC：Diagnostic Trouble Code）の読み出しと消去が可能です。チェックエンジンランプが点灯した場合や、整備後のコード消去に使用します。</p>
+
+    <div class="alert warn">
+      <div class="alert-icon">⚠️</div>
+      <div><strong>マップ読み出し前に必ず故障コードを確認すること。</strong>マップの読み出し（Read）を実行すると、ECUに保存されている故障コードが消去されてしまいます。診断目的でコードを確認したい場合は、マップ読み出しより先に行ってください。</div>
+    </div>
+
+    <h3 style="font-family:'Rajdhani',sans-serif;color:var(--text-bright);font-size:1.05rem;letter-spacing:0.05em;margin:24px 0 12px;">故障コードの読み出し手順</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <div class="step-title">ECUに接続した状態でErrorsを開く</div>
+          <p>通常の接続手順でIAWDiagをECUに接続する。接続後、<span class="menu-path">View <span class="arrow">▶</span> Errors</span> を選択する。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <div class="step-title">故障コードを確認する</div>
+          <p>ウィンドウ上部に検出された故障コードが表示される。コードが表示されない場合は現在エラーなしの状態。表示された場合は内容をメモまたはスクリーンショットで記録しておく。</p>
+        </div>
+      </li>
+    </ol>
+
+    <h3 style="font-family:'Rajdhani',sans-serif;color:var(--text-bright);font-size:1.05rem;letter-spacing:0.05em;margin:24px 0 12px;">故障コードの消去手順</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <div class="step-title">Actorsから消去を実行する</div>
+          <p><span class="menu-path">View <span class="arrow">▶</span> Actors</span> を開き、ドロップダウンから <code>Clear Stored Data</code> を選択して「Start」をクリックし、指示に従って操作する。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num"></div>
+        <div class="step-body">
+          <div class="step-title">消去後に再度確認する</div>
+          <p>消去後、再度 <span class="menu-path">View <span class="arrow">▶</span> Errors</span> を開いてコードが消えていることを確認する。根本原因が解決されていない場合はコードが再発生する。</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="card">
+      <div class="card-title">P0611（Saved Data File）について</div>
+      <p>一部のECU（Aprilia RSV4等）では <code>P0611</code> コードが通常の消去操作では消えない場合があります。</p>
+      <p>この場合はActorsの <code>Stored Data Download</code> を先に実行してからClear Stored Dataを実行することで消去できます。IAWDiag V0.48以降で対応しています。</p>
+    </div>
+
+    <div class="alert info">
+      <div class="alert-icon">ℹ️</div>
+      <div><strong>コードが繰り返し発生する場合：</strong>根本的な原因（センサー不良・配線不良・バッテリー劣化等）が解決されていない可能性があります。コードを消去しても再点灯する場合は機械的な点検が必要です。</div>
+    </div>
+  </section>
+
+  <!-- 13. TROUBLE -->
+
+  <section class="section" id="trouble">
+    <div class="section-header">
+      <span class="section-num">13</span>
       <h2>トラブルシューティング</h2>
     </div>
 
