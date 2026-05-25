@@ -917,6 +917,11 @@
     </div>
     <p>COトリムは<strong>5AMおよび15RC ECUのみ</strong>対応しています。新しいマップを書き込んだ後や、アイドルが不安定な場合に微調整します。範囲は-128〜+128です。</p>
 
+    <div class="alert danger">
+      <div class="alert-icon">🚨</div>
+      <div><strong>O2センサー付き車種（クローズドループECU）には効果なし：</strong>ムルティストラーダ1100・S2R1000等のO2センサーを装備した車種はECUがクローズドループ制御を行うため、COトリムの調整値はECUに上書きされ実質的に機能しない。IAWDiag上では調整できるように見えるが、値は保存されず再接続時に0と表示される。COトリムが有効なのは<strong>O2センサーなし（オープンループ）のECUのみ</strong>。</div>
+    </div>
+
     <ol class="steps">
       <li class="step">
         <div class="step-num"></div>
