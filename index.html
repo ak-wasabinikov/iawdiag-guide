@@ -625,7 +625,7 @@
       <ul>
         <li><strong>IAWDiag本体</strong>：<a href="http://www.von-der-salierburg.de/download/GuzziDiag/" style="color:var(--gold)">von-der-salierburg.de</a> からダウンロード</li>
         <li><strong>ECU対応のReader/Writer</strong>：同サイトから車種に合ったものをダウンロード（例：IAW5xReader、IAW5xWriter）</li>
-        <li><strong>FTDIドライバー</strong>：付属CDのドライバーは使用せず、<a href="https://www.griso.org/CDM21228_Setup.zip" style="color:var(--gold)">こちら</a>からダウンロードしてインストール</li>
+        <li><strong>FTDIドライバー</strong>：付属CDのドライバーは使用せず(ウイルス等の感染を防ぐため)、<a href="https://ftdichip.com/drivers/d2xx-drivers/" style="color:var(--gold)"></a>メーカーサイト</a>からダウンロードしてインストール</li>
       </ul>
     </div>
 
@@ -655,7 +655,7 @@
         <div class="step-num"></div>
         <div class="step-body">
           <div class="step-title">FTDIドライバーをインストール</div>
-          <p>ケーブルに付属のCDのドライバーは使用しないこと。griso.orgで配布されているドライバー（CDM21228_Setup.zip）を使用する。インストール後、PCを再起動する。</p>
+          <p>ケーブルに付属のCDのドライバーは使用しないこと。メーカーサイトでダウンロードしたドライバーを使用する。インストール後、画面の指示に従いPCを再起動する。</p>
         </div>
       </li>
       <li class="step">
@@ -684,7 +684,7 @@
 
     <div class="alert warn">
       <div class="alert-icon">⚠️</div>
-      <div><strong>ダウンロードについて：</strong>IAWDiagはコード署名のないオープンソースソフトのため、一部のセキュリティソフトやブラウザが警告を表示する場合があります。ダウンロードは必ず公式配布元（von-der-salierburg.de）からのみ行ってください。ファイルの安全性が気になる場合は VirusTotal 等のオンラインスキャンで事前に確認できます。</div>
+      <div><strong>ダウンロードについて：</strong>IAWDiagはコード署名のないオープンソースソフトのため、一部のセキュリティソフトやブラウザが警告を表示する場合があります。ダウンロードは必ず公式配布元（von-der-salierburg.de）からのみ行ってください。ファイルの安全性が気になる場合はアンチウイルスソフトなどでスキャンしてください。</div>
     </div>
   </section>
 
@@ -721,6 +721,7 @@
         <div class="step-body">
           <div class="step-title">IAWDiagの設定を行う（初回のみ）</div>
           <p><span class="menu-path">File <span class="arrow">▶</span> Preferences</span> を開き、COMポートとECU型番を設定する。設定後、ダイアログを閉じる。</p>
+          <p>※TPSセンサーはスロットルボディに装着してあるものを選択すること。(Multistrada 1100 -> PF1C / ST3 -> PF09)</p>
         </div>
       </li>
       <li class="step">
@@ -933,7 +934,7 @@
 
     <div class="card">
       <div class="card-title">TPS正常値の目安（Ducati）</div>
-      <p><strong>Monster 1000/1100 / Hypermotard 1100</strong>：約 <code>4.6 〜 4.8</code></p>
+      <p><strong>Multisstrada 1100(MY2009所有車にて)</strong>：約 <code>3.0 〜 3.4</code></p>
       <p>リセット後にIAWDiag画面のTPS表示値がこの範囲に収まっていることを確認してください。大きくずれている場合はスロットルボディやTPSセンサーに問題がある可能性があります。</p>
     </div>
   </section>
