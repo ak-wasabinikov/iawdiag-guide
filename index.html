@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IAWDiag 日本語ガイド | Ducati / Magneti Marelli ECU診断・マップ読み書き・TPSリセット</title>
-<meta name="description" content="IAWDiag（GuzziDiag）の日本語解説。DucatiやMoto GuzziのMagneti Marelli ECUに接続し、故障コード診断・マップ読み書き・TPSリセット・COトリム・サービスリセットを行う手順をわかりやすく解説します。対応ECU：5AM・5AMB・15M・15RC。">
-<meta name="keywords" content="IAWDiag,GuzziDiag,Ducati,ECU,Magneti Marelli,診断,マップ,TPS,リセット,5AM,ムルティストラーダ,Monster,Hypermotard,OBD2,日本語">
+<meta name="description" content="IAWDiag（GuzziDiag）の日本語解説。DucatiやMoto Guzziのマニエッティマレリ製ECUに接続し、故障コード診断・マップ読み書き・TPSリセット・COトリム・サービスリセットを行う手順をわかりやすく解説します。対応ECU：5AM・5AMB・15M・15RC。">
+<meta name="keywords" content="IAWDiag,GuzziDiag,Ducati,ECU,Magneti Marelli,マニエッティマレリ,診断,マップ,TPS,リセット,5AM,ムルティストラーダ,Monster,Hypermotard,OBD2,日本語">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://iawdiag.wasabinikov.com/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d0f14'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle' fill='%23e8003d' font-family='Arial,sans-serif' font-weight='bold'%3ED%3C/text%3E%3C/svg%3E">
@@ -15,19 +15,19 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://iawdiag.wasabinikov.com/">
 <meta property="og:title" content="IAWDiag 日本語ガイド | Ducati / Magneti Marelli ECU診断">
-<meta property="og:description" content="DucatiやMoto GuzziのMagneti Marelli ECUに接続し、故障コード診断・マップ読み書き・TPSリセット等を行うための無償ソフト「IAWDiag」の日本語解説ページです。">
+<meta property="og:description" content="DucatiやMoto Guzziのマニエッティマレリ製ECUに接続し、故障コード診断・マップ読み書き・TPSリセット等を行うための無償ソフト「IAWDiag」の日本語解説ページです。">
 <meta property="og:locale" content="ja_JP">
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IAWDiag 日本語ガイド | Ducati ECU診断">
-<meta name="twitter:description" content="DucatiのMagneti Marelli ECUを無償ソフトで診断・マップ読み書きする方法を日本語で解説。">
+<meta name="twitter:description" content="Ducatiのマニエッティマレリ製ECUを無償ソフトで診断・マップ読み書きする方法を日本語で解説。">
 <!-- Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "IAWDiag 日本語ガイド | Ducati / Magneti Marelli ECU診断",
-  "description": "IAWDiag（GuzziDiag）を使用してDucati・Moto GuzziのMagneti Marelli ECUに接続し、故障コード診断・マップ読み書き・TPSリセット・COトリム調整を行う手順の日本語解説。",
+  "description": "IAWDiag（GuzziDiag）を使用してDucati・Moto Guzziのマニエッティマレリ製ECUに接続し、故障コード診断・マップ読み書き・TPSリセット・COトリム調整を行う手順の日本語解説。",
   "url": "https://iawdiag.wasabinikov.com/",
   "mainEntityOfPage": { "@type": "WebPage", "@id": "https://iawdiag.wasabinikov.com/" },
   "inLanguage": "ja",
@@ -56,7 +56,7 @@
       "name": "IAWDiagとGuzziDiagの違いは何ですか？",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "GuzziDiagはMoto Guzziのモデル名でバイクを選択しますが、IAWDiagはMagneti Marelli ECUの型番で選択します。機能はほぼ同一で、DucatiユーザーはIAWDiagを使用します。"
+        "text": "GuzziDiagはMoto Guzziのモデル名でバイクを選択しますが、IAWDiagはマニエッティマレリ製ECUの型番で選択します。機能はほぼ同一で、DucatiユーザーはIAWDiagを使用します。"
       }
     },
     {
@@ -528,7 +528,7 @@
   <div class="container">
     <div class="hero-tag">Magneti Marelli ECU Diagnostic Software</div>
     <h1>IAW<span>Diag</span><br>日本語ガイド</h1>
-    <p class="hero-sub">Ducati・Moto Guzzi・Aprilia等のMagneti Marelli ECUに接続し、診断・マップ読み書き・各種リセットを行うための無償ソフトウェアの解説ページです。</p>
+    <p class="hero-sub">Ducati・Moto Guzzi・Aprilia等に搭載されているマニエッティマレリ製ECUに接続し、診断・マップ読み書き・各種リセットを行うための無償ソフトウェアの解説ページです。</p>
     <div class="hero-meta">
       <div class="meta-item"><div class="meta-dot"></div>対象：中級者（基本的なPC操作とバイクメンテができる方）</div>
       <div class="meta-item"><div class="meta-dot gold"></div>対応OS：Windows</div>
@@ -565,7 +565,7 @@
       <span class="section-num">01</span>
       <h2>IAWDiagとは</h2>
     </div>
-    <p>IAWDiagは、Magneti Marelli製ECUを搭載したバイクの診断・設定変更を行うための<strong>無償のオープンソースソフトウェア</strong>です。元々Moto Guzzi向けに開発されたGuzziDiagの汎用版として配布されており、DucatiやApriliaなど幅広い車種に対応しています。</p>
+    <p>IAWDiagは、マニエッティマレリ製ECUを搭載したバイクの診断・設定変更を行うための<strong>無償のオープンソースソフトウェア</strong>です。元々Moto Guzzi向けに開発されたGuzziDiagの汎用版として配布されており、DucatiやApriliaなど幅広い車種に対応しています。</p>
 
     <div class="feature-grid">
       <div class="feature-item">
@@ -622,7 +622,7 @@
       <span class="section-num">02</span>
       <h2>対応ECU一覧（Ducati）</h2>
     </div>
-    <p>Ducatiで使用されているMagneti Marelli ECUの主な型番です。車種とECU型番の対応を確認してからソフトウェアを選択してください。</p>
+    <p>Ducatiで使用されているマニエッティマレリ製ECUの主な型番です。車種とECU型番の対応を確認してからソフトウェアを選択してください。</p>
 
     <div class="table-wrap">
       <table>
