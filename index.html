@@ -6,8 +6,11 @@
 <title>IAWDiag 日本語ガイド | Ducati / Magneti Marelli ECU診断・マップ読み書き・TPSリセット</title>
 <meta name="description" content="IAWDiag（GuzziDiag）の日本語解説。DucatiやMoto GuzziのMagneti Marelli ECUに接続し、故障コード診断・マップ読み書き・TPSリセット・COトリム・サービスリセットを行う手順をわかりやすく解説します。対応ECU：5AM・5AMB・15M・15RC。">
 <meta name="keywords" content="IAWDiag,GuzziDiag,Ducati,ECU,Magneti Marelli,診断,マップ,TPS,リセット,5AM,ムルティストラーダ,Monster,Hypermotard,OBD2,日本語">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://iawdiag.wasabinikov.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d0f14'/%3E%3Ctext x='50' y='72' font-size='64' text-anchor='middle' fill='%23e8003d' font-family='Arial,sans-serif' font-weight='bold'%3ED%3C/text%3E%3C/svg%3E">
+<!-- Google Search Console 認証タグをここに貼り付け（例）: -->
+<!-- <meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxxxxxx"> -->
 <!-- OGP -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://iawdiag.wasabinikov.com/">
@@ -26,11 +29,61 @@
   "headline": "IAWDiag 日本語ガイド | Ducati / Magneti Marelli ECU診断",
   "description": "IAWDiag（GuzziDiag）を使用してDucati・Moto GuzziのMagneti Marelli ECUに接続し、故障コード診断・マップ読み書き・TPSリセット・COトリム調整を行う手順の日本語解説。",
   "url": "https://iawdiag.wasabinikov.com/",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://iawdiag.wasabinikov.com/" },
   "inLanguage": "ja",
+  "datePublished": "2026-05-22",
+  "dateModified": "2026-08-28",
+  "author": { "@type": "Person", "name": "wasabinikov" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "IAWDiag 日本語ガイド",
+    "url": "https://iawdiag.wasabinikov.com/"
+  },
+  "proficiencyLevel": "Intermediate",
   "audience": {
     "@type": "Audience",
     "audienceType": "Ducatiオーナー・バイク整備中級者"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "IAWDiagとGuzziDiagの違いは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GuzziDiagはMoto Guzziのモデル名でバイクを選択しますが、IAWDiagはMagneti Marelli ECUの型番で選択します。機能はほぼ同一で、DucatiユーザーはIAWDiagを使用します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "IAWDiagの接続に必要なケーブルは何ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FTDIチップ搭載のOBD2 KKL 16ピン→USB変換ケーブルと、Fiat 3ピン→16ピン変換アダプターが必要です。Lonelec（lonelec.co.uk）のセットが最も推奨されています。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ECUに接続できない・タイムアウトする場合はどうすればよいですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "COMポート番号、FTDIドライバーのインストール状況、OBD2ケーブルのLED点灯（電源供給）を確認してください。またIAWDiag本体とReader/Writerを同時に起動していないか確認します。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "マップ書き込み後にTPSリセットは必要ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。マップ書き込み後は必ずTPSリセットを行ってください。行わないと低回転域でのアイドルや応答が不安定になる場合があります。"
+      }
+    }
+  ]
 }
 </script>
 <!-- Google tag (gtag.js) -->
